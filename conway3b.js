@@ -27,7 +27,7 @@ function copyBorders(grid)
 var prev = new Uint8Array(WIDTH*HEIGHT);
 var curr = new Uint8Array(WIDTH*HEIGHT);
 
-for (var j = 0; j < WIDTH*HEIGHT; j++) curr[j] = Math.random() % 1;
+for (var j = 0; j < WIDTH*HEIGHT; j++) curr[j] = Math.floor(Math.random()*2);
 
 for (var i = 0; i < ITERATIONS; i++) {
 	/* if (!(i % 10)) console.log('Iteration ' + i); */

@@ -28,7 +28,7 @@ var prev = [];
 for (var j = 0; j < WIDTH*HEIGHT; j++) prev[j] = 0;
 
 var curr = [];
-for (var j = 0; j < WIDTH*HEIGHT; j++) curr[j] = Math.random() % 1;
+for (var j = 0; j < WIDTH*HEIGHT; j++) curr[j] = Math.floor(Math.random()*2);
 
 for (var i = 0; i < ITERATIONS; i++) {
 	/* if (!(i % 10)) console.log('Iteration ' + i); */
