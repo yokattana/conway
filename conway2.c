@@ -48,7 +48,8 @@ int main(int argc, const char* argv[])
 				prev[IDX(x+1,y-1)] + prev[IDX(x-1,y)] +
 				prev[IDX(x+1,y)] + prev[IDX(x-1,y+1)] +
 				prev[IDX(x,y+1)] + prev[IDX(x+1,y+1)];
-			curr[IDX(x,y)] = n == 2 || n == 3;
+			int i = IDX(x,y);
+			curr[i] = n == 3 || (prev[i] && n == 2);
 		}
 		
 		copy_borders(curr);

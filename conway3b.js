@@ -52,7 +52,7 @@ for (var i = 0; i < ITERATIONS; i++) {
 	for (var j = WIDTH; j < WIDTH*(HEIGHT-1); j++)
 		curr[j] += prev[j+WIDTH+1];
 	for (var j = WIDTH; j < WIDTH*(HEIGHT-1); j++)
-		curr[j] = (curr[j] >> 1) == 1 ? 1 : 0;
+		curr[j] = curr[j] == 3 || (prev[j] && curr[j] == 2);
 	
 	copyBorders(curr);
 }

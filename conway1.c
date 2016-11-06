@@ -31,7 +31,7 @@ int main(int argc, const char* argv[])
 				prev[IDX(x+1,y-1)] + prev[IDX(x-1,y)] +
 				prev[IDX(x+1,y)] + prev[IDX(x-1,y+1)] +
 				prev[IDX(x,y+1)] + prev[IDX(x+1,y+1)];
-			curr[j] = n == 2 || n == 3;
+			curr[j] = n == 3 || (prev[j] && n == 2);
 		}
 	}
 
