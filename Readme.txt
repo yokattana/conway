@@ -2,7 +2,7 @@ Conway's Game of Life benchmark
 -------------------------------
 
 This project is meant to test a few implementations of Conway's Game of Life
-in C, JavaScritp and ASM.js against each other.
+in C, JavaScript and ASM.js against each other.
 
 The tests are unscientific and very likely incorrect in their implementation
 but they serve the intention of experimenting with various approaches and
