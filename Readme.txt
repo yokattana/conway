@@ -76,6 +76,13 @@ Emcc -O1                                                        7.83
 Emcc -O2                                                        6.47
 
 
+Compiling
+--------
+
+    make
+    emcc -O3 conway3.c -o conway3.c.js  # ASM.js
+
+
 License
 -------
 
