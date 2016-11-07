@@ -59,7 +59,7 @@ int main(int argc, const char* argv[])
 		for (int j = WIDTH; j < WIDTH*(HEIGHT-1); j++)
 			curr[j] += prev[j+WIDTH+1];
 		for (int j = WIDTH; j < WIDTH*(HEIGHT-1); j++)
-			curr[j] = (curr[j] >> 1) == 1;
+			curr[j] = curr[j] == 3 || (prev[j] && curr[j] == 2);
 		
 		copy_borders(curr);
 	}
