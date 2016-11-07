@@ -60,7 +60,7 @@ conway3.c    Compiling the C code to ASM.js, a subset of JavaScript that
 Benchmarks results
 ------------------
 
-In seconds. Obtained by using  sleep <command> on a FreeBSD Linode instance as
+In seconds. Obtained by using  time <command>  on a FreeBSD Linode instance as
 well as a Skylake i5 machine running Windows 10 with the Windows Subsystem for
 Linux.
 
